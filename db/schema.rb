@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20180110065412) do
     t.string "name", null: false
     t.string "ingredients", null: false
     t.decimal "price", precision: 10, scale: 2, null: false
-    t.integer "type", null: false
+    t.integer "category", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

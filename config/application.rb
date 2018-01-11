@@ -32,7 +32,7 @@ module ChinaParadiseApi
     config.middleware.insert_before 0, Rack::Cors do
         allow do
             origins 'http://localhost:3000'
-            resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+            resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options], expose: ['Access-Token', 'Uid']
         end
 end
   end
