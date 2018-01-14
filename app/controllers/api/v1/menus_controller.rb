@@ -26,10 +26,17 @@ module Api::V1
       @menu.update_attributes(menu_params)
       render json: @menu
     end
+
+    def destroy
+      @menu = Menu.find(params[:id])
+      @menu.destroy
+      render json: @menu    
+    end
+
     private
 
     def menu_params
-    	params.require(:menu).permit(:name, :ingredients, :price, :category)
+    	params.require(:menu).permit(:name, :ingredients, :price, :category, :picture)
     end
 
   end
