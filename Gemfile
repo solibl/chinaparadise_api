@@ -27,7 +27,7 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'jwt'
 gem 'simple_command'
 gem "paperclip"
-gem 'aws-sdk', '2.10.47'
+gem 'aws-sdk', '< 3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
