@@ -31,7 +31,7 @@ module ChinaParadiseApi
     config.api_only = true
     config.middleware.insert_before 0, Rack::Cors do
         allow do
-            origins 'http://localhost:3000', 'https://china-paradise.herokuapp.com/'
+            origins 'https://china-paradise.herokuapp.com/'
             resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options], expose: ['Access-Token', 'Uid']
         end
     end
