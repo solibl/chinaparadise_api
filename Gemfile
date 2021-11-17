@@ -27,7 +27,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors', require: 'rack/cors'
 gem 'jwt'
 gem 'simple_command'
-gem "paperclip"
+gem "paperclip", '~> 1.6', '>= 1.6.8'
 gem 'aws-sdk', '< 3.0'
 
 group :development, :test do
